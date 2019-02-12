@@ -1,0 +1,327 @@
+/* LES TRUCS EN GENERAL!!! */
+
+ul {
+	max-height: 99%;
+	max-width: 99%;
+}
+
+.headder {
+	background: linear-gradient(to bottom, #33ccff 0%, #6699ff 109%);
+}
+
+
+.logo {
+	float: left;
+	font-size: 25px;
+	font-family: courier;
+	color: black;
+	margin-top: 10px;
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+
+.sT {
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+	margin-left: 0px;
+	width: 0px;
+	heigth: 50px;
+	color: #FF0000;
+	font-family: OCR A;
+	font-weight: bold;
+	visibility: hidden;
+}
+
+.sb {
+	background-color: white;
+	padding-top: 10px;
+	margin: 10px;
+	margin-left: 50px;
+	width: 0px;
+	heigth: 50px;
+	color: white;
+	font-family: OCR A;
+	font-weight: bold;
+}
+
+img.bannière {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.parallax {
+	/* The image used */
+	background-image: url("bannière.jpeg");
+	height: 550px;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sb {
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+	margin-top: 50px;
+	width: 500px;
+	heigth: 50px;
+	color: black;
+	font-family: OCR A;
+	font-weight: bold;
+	margin-left: 100px;
+}
+
+.menu {
+	float: right;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 20px;
+	color: #FF0000;
+	padding-right: 30px;
+}
+
+.LSD {
+	/*    max-height: 50px;
+    max-width: 50px; */
+	height: 55px;
+	width: 55px;
+	float: left;
+}
+
+/* footer */
+.footer {
+	text-align: right;
+	font-size: 15px;
+	background-color: #000000;
+	color: #00FF00;
+	padding: 10px;
+	font-family: courier;
+	margin-top: 50px;
+}
+
+.login {
+	max-width: 35px;
+	max-height: 35px;
+	height: auto;
+	width: auto;
+	margin-top: 10px;
+}
+
+.chariot {
+	max-width: 38px;
+	max-height: 38px;
+	height: auto;
+	width: auto;
+	margin-top: 10px;
+}
+
+/*---------*/
+
+
+
+
+.feed {
+	width: 1600px;
+	margin-right: auto;
+	margin-left: auto;
+	color: #000000;
+	font-family: courier;
+
+}
+
+.text {
+	width: 1300px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5%;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 20px;
+	padding-top: 1px;
+	max-width: 99%;
+	color: #000000;
+	font-family: courier;
+	text-align: justify;
+	background: linear-gradient(to right, #ccffff -1%, #66ccff 107%);
+}
+
+.title {
+	font-size: 20px;
+}
+
+.titlediv {
+	text-align: center;
+	font-size: 25px;
+}
+
+
+.container {
+	height: 800px;
+	filter: alpha(opacity=0);
+	text-align: center;
+}
+
+.textcontainer {
+	height: 1300px;
+	filter: alpha(opacity=0);
+}
+
+
+/*-----------*/
+
+.row1 {
+	width: 300px;
+	padding: 49px;
+	text-align: center;
+	display: inline-block;
+}
+
+	.row1:hover {
+		/* background-color: black; */
+		color: #3CB371;
+		font-weight: bold;
+	}
+
+.feed li {
+	list-style-type: none;
+	float: left;
+}
+
+
+.image2 {
+	max-width: 99%;
+	max-height: 99%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------*/
+
+
+.dropdown {
+	display: none;
+}
+
+.menuc {
+	max-width: 38px;
+	max-height: 38px;
+	height: auto;
+	width: auto;
+	margin-top: 5px;
+}
+
+.menul {
+	max-width: 35px;
+	max-height: 35px;
+	height: auto;
+	width: auto;
+	margin-top: 5px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+	.menu {
+		display: none;
+	}
+
+	.dropdown {
+		display: inline;
+		float: right;
+		margin: 20px;
+	}
+
+	.sT {
+		width: 30%;
+	}
+
+
+	/********* START OF DROPDOWN ***********/
+
+	.dropbtn {
+		background-color: #FF0000;
+		color: white;
+		padding: 10px;
+		font-size: 16px;
+		border: none;
+		float: right;
+	}
+
+	/* The container <div> - needed to position the dropdown content */
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+
+	/* Dropdown Content (Hidden by Default) */
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #303030;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+
+		/* Links inside the dropdown */
+		.dropdown-content a {
+			color: #FF0000;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+
+			/* Change color of dropdown links on hover */
+			.dropdown-content a:hover {
+				background-color: #ddd;
+			}
+
+	/* Show the dropdown menu on hover */
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	/* Change the background color of the dropdown button when the dropdown content is shown */
+	.dropdown:hover .dropbtn {
+		background-color: #FF0000;
+	}
+}
+
+/********* END OF DROPDOWN ***********/
+
+
+
+/* SPECIALEMENT POUR INDEX.HTML */
+
+.image {
+	max-height: 99.9%;
+	max-width: 99.9%;
+	height: 100px;
+	width: 100px;
+}
+
+img.image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+/*---------*/
+
+.slide {
+	margin-left: auto;
+	margin-right: auto;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+	.slide img {
+		vertical-align: middle;
+	}
