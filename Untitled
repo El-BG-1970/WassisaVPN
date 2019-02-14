@@ -1,4 +1,4 @@
-﻿<html>
+<html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
@@ -13,9 +13,8 @@
   	       <a href="index.html"><img class="LSD" src="logo.png" alt="hope"></a>
   	       <a class="logo" href="index.html">Info Tech</a>
            <a><input class="sT"></a>
-           <a class="menu" href="vpn.html">VPN</a>
-           <a class="menu" href="ordinateur.html">Ordinateur</a>
-           <a class="menu" href="index.html">Home</a>
+           <a class="menu" href="cart.html"></a>
+           <a class="menu" href="compte.html"></a>
         </ul>
       </div>
     </header>
