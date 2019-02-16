@@ -26,36 +26,54 @@
     <div class="textcontainer">
       <div class="text">
         <p class="title" id="Serv">Qu'est-ce qu'un serveur internet?</p>
-        <p>Un serveur informatique est un dispositif informatique (matériel ou logiciel) qui offre des services a un ou plusieurs clients. Il fonctionne en permanence, et répond automatiquement aux requêtes provenant des clients avec lesquels il est connecté.</p>
-    		<p>Les services les plus courants proposés par un serveur sont:</p>
-    		<ol>
-    			<li>L'accès au informations du World Wide Web</li>
-    			<li>L'envoi et la consultaiton de couriels</li>
-    			<li>Le partage d'imprimante (sur un réseau local, notamment)</li>
-    			<li>Le stockage d'informations en bases de données</li>
-    			<li>la gestion de l'authentification et du controle d'accès</li>
-    			<li>Le jeu et la mise à disposition de logiciels applicatifs</li>
-    		</ol>
-
+          <p>Un <b>serveur</b> informatique est un dispositif informatique (matériel ou logiciel) qui offre des services a un ou plusieurs clients. Il fonctionne en permanence, et répond automatiquement aux requêtes provenant des clients avec lesquels il est connecté.</p>
+          <p>Les services les plus courants proposés par un serveur sont:</p>
+          <ol>
+            <li>L'accès au informations du World Wide Web</li>
+            <li>L'envoi et la consultaiton de couriels</li>
+            <li>Le partage d'imprimante (sur un réseau local, notamment)</li>
+            <li>Le stockage d'informations en bases de données</li>
+            <li>la gestion de l'authentification et du controle d'accès</li>
+            <li>Le jeu et la mise à disposition de logiciels applicatifs</li>
+          </ol>
+          <a class="illustration"><img class="img" src="images_vpn/server.png"></a>
+        
         <p class="titlediv">- - - - - -</p>
 
-        <p class="title" id="IP">&spades; Que sont les Protocoles Internet? &spades;</p>
-          <p>La suite <i>TCP/IP</i> est l'ensemble des protocoles utilisés pour le transfert de données sur Internet. Cette famille de protocole est subdivisée en plusieurs couches qui servent plusieurs objectifs différents.</p>
-          <p>La première couche correspond a la couche application. En comparant le modèle TCP/IP au modèle OSI, on voit que les protocoles tels que HTTP, HTTPS, FTP, Telnet, qui servent a communiquer entre client et serveur, ASCII, Unicode, qui servent à présenter les informations à l'écran, RPC, ASP, qui servent a analyser les sessions utilisateurs, ainsi que TCP et UDP, qui servent à assurer le transfert de l'information entre le client et le serveur, appartiennet tous à  cette couche du modèle.</p>
-          <!-- (2. la on liste / explique les protocoles) -->
-          <!-- handshake image... -->
-          <a class="illustration"><img class="img" src="la tu cales la source"></a>
+        <a class="title" id="IP">&spades; Que sont les Protocoles Internet? &spades;</a>
+          <p>La suite <i>TCP/IP</i> est le protocole standard utilisé par tous les systèmes qui se connectent à l'internet.</p>
+          <p>Le protocole <b>IP</b> est un protocole de plus bas niveau que le protocole TCP. Il propose un service de datagramme, sans connection, et une structure d'addresse pour le partage d'information. Le protocole IP permet de fragmenter de longs datagrammes en paquets numérotés, qui sont ensuite transmis et réassemblés chez le destinataire.</p>
+          <p>Le protocole <b>TCP</b> est un protocole de transfert de données qui permet le transfert d'informations de taille arbitraire, nommés segments. Le protocole assure que la réception des données se fera dans le même ordre que les données ont été envoyées. Ceci est permis par un échange constant d'informations entre le client et le server, ce dernier demandant une confirmation de réception après l'envoi de quelquonque portion du segment.</p>
+          <a class="illustration"><img class="img" src="images_vpn/protocol.png"></a>
+          <p class="titlediv">&#1421; &#1421; &#1421; &#1421; &#1421; &#1421;</p>
               
         <p class="title" id="IPaddr">&spades; Qu'est-ce qu'une addresse IP? &spades;</p>
-        <p>$Expliquer ce qu'est une addresse IP statique vs dynamique$</p>
-        <p class="title" id="port">&spades; Qu'est ce que les ports? &spades;</p>
-        <p>$expliquer ce qu'un port$</p>
+          <p>Une <b>addresse IP</b> est un numéro d'indentification qui est attribué de facon permanente, ou dynamque (via DHCP) à chaque périphérique relié à un réseau informatique qui utilise les protocoles de la famille <a href="#IP"></ahref><b>TCP/IP</b></a>. Ces addresses varient en longueur, les plus communes mesurant 32 bits (IPv4) ou 128 bits (IPv6).</p>
+          <a class="illustration"><img class="img" src="images_vpn/ip.jpg"></a>
+          <p class="titlediv">&#1758; &#1758; &#1758; &#1758; &#1758; &#1758;</p>
+            
+        <p class="title" id="port">&spades; Qu'est-ce qu'un port? &spades;</p>
+          <p>Un <b>port</b> est un point a partir duquel des données peuvent entrer ou sortir d'un réseau. Les ports de communication permettent notamment de se connecter a une interface de communication et d'échanger des informations avec d'autres ordinateurs ou systèmes électroniques. Ce terme est applicable aux interfaces réseau et aux interfaces DTE (<i>Data Terminal Equipment</i>), tel un ordinateur connecté a internet, une imprimante réseau, un terminal, etc.).</p>
+          <a class="illustration"><img class="img" src="images_vpn/port.jpg"></a>
+            <p class="titlediv">&#4051; &#4051; &#4051; &#4051; &#4051; &#4051;</p>
+
         <p class="title" id="net">&spades; Qu'est-ce qu'un réseau? &spades;</p>
-        <p>$Expliquer ce qu'est un réseau internet et comment ça marche$</p>
-        <p class="title" id="proxy">&spades; Qu'est-ce qu'un réseau proxy? &spades;</p>
-        <p>$Expliquer ce qu'est un réseau proxy$</p>
-        <p class="title" id="VPN">&spades; Qu'est-ce qu'un réseau VPN? &spades;</p>
-        <p>$Expliquer ce qu'est un réseau VPN$</p>
+          <p>Un <b>réseau</b> est un dispositif qui est composé de nombreux terminaux, noeuds, et méthodes de connection qui peuvent inclure des lignes physiques mais aussi des satellites, des micro-ondes, des ondes radios, etc. En général, un réseau est une collection de ressources et est utilisé pour établir et gérer les voies de communication entre les terminaux qui composent ledit réseau.</p>
+          <p>Un <b>masque de sous-réseau</b> est une spécification de la partie d'une addresse IP qui représente l'identitée du réseau. Il s'agit d'un bitmap de 32 bits dans lequel chaque position ou le bit vaut 1 fait partie de l'identité du réseau. Ainsi, dans une addresse ipv4, le masque 255.255.255.0 montre que les trois premiers nombres appartiennent au masque et que le quatrième est variable, et change selon l'adresse de l'hote.</p>
+          <p>Un <b>sous-réseau</b> est une partie identifiable d'un réseau. La division d'un réseau en sous-réseau permet de créer des réseaux adaptés au besoins d'une entreprise en fonction des taches que doit remplir le réseau et de la division du travail au sein de l'entreprise.</p>
+          <a class="illustration"><img class="img" src="images_vpn/reseau.png"></a>
+          <p class="titlediv">&#5782; &#5782; &#5782; &#5782; &#5782; &#5782;</p>
+
+        <p class="title" id="proxy">&spades; Qu'est-ce qu'un serveur proxy? &spades;</p>
+          <p>Un <b>serveur proxy</b> est un appareil qui gère le traffic internet pour un autre appareil. Un client envoie une requête à un proxy, qui la relaie à un serveur, qui, lui, voit le proxy comme un client. La réponse du serveur est ensuite renvoyée au proxy, et, de ce dernier, au client. Les proxys sont généralement utilisés conjointement a un firewall, pour permettre l'utilisation de protocoles complexes, pour examiner les requêtes et les réponses internet, pour acheminer les requêtes via un autre serveur, ou filter les réponses aux requêtes émises.</p>
+          <a class="illustration"><img class="img" src="images_vpn/proxy.png"></a>
+          <p class="titlediv">&#5860; &#5860; &#5860; &#5860; &#5860; &#5860;</p>
+
+        <p class="title" id="VPN">&spades; Qu'est-ce qu'un VPN? &spades;</p>
+          <p>Un <b>VPN</b> est une connection entre deux ordinateurs ou autres appareils au sein de laquelle toute information envoyée sur un réseau partagé, tel que l'internet, et chiffrée et déchiffrée, par les l'émetteur et le récepteur, respectivement. Alors que les informations sont partagées sur un réseau ouvert, ces dernières sont protégées, grace au VPN, pendant le cheminement de l'emmeteur et le destinataire.</p>
+          <p>Les VPN permettent de protéger des informations confidentielles sur un réseau ouvert, accéder a un intranet depuis un point extérieur, ou tromper un serveur quant à sa localisation, par exemple.</p>
+          <a class="illustration"><img class="img" src="images_vpn/vpn.jpg"></a>
+          <p class="titlediv">&#9957; &#9957; &#9957; &#9957; &#9957; &#9957;</p>
 
         <p class="titlediv">- - - VPN SUR RARSPBERRY PI - - -</p>
       </div>
