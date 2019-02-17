@@ -1,4 +1,4 @@
-/* LES TRUCS EN GENERAL!!! */
+﻿/* LES TRUCS EN GENERAL!!! */
 
 ul {
 	max-height: 99%;
@@ -335,3 +335,9 @@ img.image {
 	.slide img {
 		vertical-align: middle;
 	}
+
+/* pour la page vpn */
+.img {
+	max-width: 50%;
+	max-height: 25%;
+}
