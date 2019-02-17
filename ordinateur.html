@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>El & Ph Info Tech</title>
+    <link rel="icon" href="logo.png" type="image" sizes="16x16">
+  </head>
+
+  <body>
+    <header>
+      <div class="headder">
+        <ul>
+  	       <a href="index.html"><img class="LSD" src="logo.png" alt="hope"></a>
+  	       <a class="logo" href="index.html">Info Tech</a>
+           <a><input class="sT"></a>
+           <a class="menu" href="vpn.html">VPN</a>
+           <a class="menu" href="ordinateur.html">Ordinateur</a>
+           <a class="menu" href="index.html">Home</a>
+        </ul>
+      </div>
+    </header>
+
+    <div class="parallax">
+    </div>
+
+    <div class="textcontainer">
+      <div class="text">
+        <p class="title" id="Serv">Qu'est-ce qu'un serveur internet?</p>
+        <p>Un serveur informatique est un dispositif informatique (matériel ou logiciel) qui offre des services a un ou plusieurs clients. Il fonctionne en permanence, et répond automatiquement aux requêtes provenant des clients avec lesquels il est connecté.</p>
+    		<p>Les services les plus courants proposés par un serveur sont:</p>
+    		<ol>
+    			<li>L'accès au informations du World Wide Web</li>
+    			<li>L'envoi et la consultaiton de couriels</li>
+    			<li>Le partage d'imprimante (sur un réseau local, notamment)</li>
+    			<li>Le stockage d'informations en bases de données</li>
+    			<li>la gestion de l'authentification et du controle d'accès</li>
+    			<li>Le jeu et la mise à disposition de logiciels applicatifs</li>
+    		</ol>
+
+        <p class="titlediv">- - - - - -</p>
+
+        <p class="title" id="IP">&spades; Que sont les Protocoles Internet? &spades;</p>
+          <p>La suite <i>TCP/IP</i> est l'ensemble des protocoles utilisés pour le transfert de données sur Internet. Cette famille de protocole est subdivisée en plusieurs couches qui servent plusieurs objectifs différents.</p>
+          <p>La première couche correspond a la couche application. En comparant le modèle TCP/IP au modèle OSI, on voit que les protocoles tels que HTTP, HTTPS, FTP, Telnet, qui servent a communiquer entre client et serveur, ASCII, Unicode, qui servent à présenter les informations à l'écran, RPC, ASP, qui servent a analyser les sessions utilisateurs, ainsi que TCP et UDP, qui servent à assurer le transfert de l'information entre le client et le serveur, appartiennet tous à  cette couche du modèle.</p>
+          <!-- (2. la on liste / explique les protocoles) -->
+          <!-- handshake image... -->
+          <a class="illustration"><img class="img" src="la tu cales la source"></a>
+
+        <p class="title" id="IPaddr">&spades; Qu'est-ce qu'une addresse IP? &spades;</p>
+        <p>$Expliquer ce qu'est une addresse IP statique vs dynamique$</p>
+        <p class="title" id="port">&spades; Qu'est ce que les ports? &spades;</p>
+        <p>$expliquer ce qu'un port$</p>
+        <p class="title" id="net">&spades; Qu'est-ce qu'un réseau? &spades;</p>
+        <p>$Expliquer ce qu'est un réseau internet et comment ça marche$</p>
+        <p class="title" id="proxy">&spades; Qu'est-ce qu'un réseau proxy? &spades;</p>
+        <p>$Expliquer ce qu'est un réseau proxy$</p>
+        <p class="title" id="VPN">&spades; Qu'est-ce qu'un réseau VPN? &spades;</p>
+        <p>$Expliquer ce qu'est un réseau VPN$</p>
+
+        <p class="titlediv">- - - VPN SUR RARSPBERRY PI - - -</p>
+        <p class="title" id="Introduction">&spades; Introduction &spades;</p>
+        <p>Afin d'installer un VPN sur notre Raspberry Pi, nous avons choisit d'utiliser le logiciel PiVPN. Il nous permet de configurer et installer sur la Raspberry Pi un serveur OpenVPN</p>
+        <p class="title" id="OpenVPN?">&spades; Qu'est ce que OpenVPN? &spades;</p>
+        <p>OpenVPN est un logiciel (open-source en plus) utilisant des méthodes de VPN pour créer une connection point à point, ou entre deux sites sécurisée.</p>
+        <p class="title" id="TelechargerPiVPN">&spades; Télécharger PiVPN &spades;</p>
+        <p>Notre raspberry pi était sous le système d’exploitation Raspbian OS lite, donc tout s’est fait en headless (c’est-à-dire seulement en utilisant le terminal de la raspberry pi, nous n’avions pas d’interface graphique, et n’avons donc pas utilisé de souris).</p>
+        <p>En premier, nous avons installé PiVPN en utilisant la commande suivante:</p>
+        <p>curl -L https://install.pivpn.io l bash</p>
+        <p><i>Curl est une commande permettant de transférer de l’information vers un serveur ou d’en recevoir. Ici, nous recevons l’information stocké à install.pivpn.io, qui est le logiciel en question que nous voulons. Il est important de comprendre que cette commande peut être dangereuse lorsqu’on ne connait pas la source que l’on cible avec curl.</i></p>
+        <p class="title" id"ConfigPiVPN">&spades; Configuration du VPN &spades;</p>
+        <p>PiVPN configure la Raspberry Pi de sorte que nous avons une adresse IP statique. Comme ça si jamais nous redémarrons la Raspberry Pi, celle ci ne changera pas d’adresse IP.</p>
+        <p>Nous avons activé les mises à jour de sécurité. Cela est très important puisque nous allons ouvrir un port sur notre routeur pour rediriger la Raspberry Pi vers internet et ainsi créer de potentielles vulnérabilités.
+        <p></p>
+        <p>Nous avons ensuite changé le port par défaut proposé par PiVPN. Cela ajoute également une couche de sécurité puisque certaines attaques se font en scannant les ports par défaut.</p>
+        <p>À présent, il est temps de créer la clé d’encryption. Nous avions le choix entre créer une clé RSA de 1024, 2048 ou 4096 bits d’encryption. Plus la clé aura nombre de bits d’encryptions élevée, plus elle prendra du temps à être générée et sera par conséquent plus sécurisée. Comme nous utilisions une Raspberry Pi 3 B+, nous aurions pu choisir une encryption à 4096 bits, mais nous avons opté pour 2048 à la fin, qui a prit environ 3 minutes à générer.</p>
+        <p>Nous devions maintenant choisir entre une adresse IP publique ou un DNS pour notre configuration DNS</p>
+        <p>Définition DNS: <i>protocole d’association entre l’URL d’un site (exemple: www.google.com) en adresse IP, que l’ordinateur sait reconnaître pour communiquer avec le serveur hébergeant ce site.</i></p>
+        <p>Note: si le but d'un VPN est d’avoir une confidentialité dans les informations privées, il est important d’être conscient du fait que certains fournisseurs DNS enregistrent leurs informations et créent des set de données sur les individus.</p>
+        <p>C'est la fin de la configuration du VPN, nous redémarrons notre Raspberry Pi à présent, question de principe…</p>
+        <p class="title" id="OpenVPN">Créer le fichier client OpenVPN</p>
+        <p>Nous devons maintenant créer un fichier client OpenVPN, nous avons fait cela avec la commande:</p>
+        <p>pivpn add</p>
+        <p>Nous choisissons android.ovpn comme nom, nous devons également choisir un mot de passe, nous recommandons un mot de passe long et compliqué.</p>
+        <img src="scrn.png" alt="vpn">
+        <p>Une fois que la clé est crée, il ne reste plus que la transférer sur l’appareil sur lequel on souhaite avoir le VPN.</p>
+        <p class="title" id="Transferer">Transférer le fichier</p>
+        <p>Pour le transférer, nous avons une technique assez efficace: Il suffit de faire passer la Raspberry Pi en Serveur HTTP Simple temporaire avec la commande (toujours dans le terminal):</p>
+        <p>python -m SimpleHTTPServer 8080         (Cela ne marche que avec python installé bien entendu)</p>
+        <p>En se connectant avec un appareil à l’adresse IP de la Raspberri Pi, sur le port 8080, nous pouvons directement télécharger le fichier android.ovpn!</p>
+        <p class="title" id="Conclusion">Conclusion</p>
+        <p>Une fois le fichier client Open VPN sur l’appareil, il suffit de l’utiliser avec un client Open VPN, il en existe beaucoup. Pour Windows, il y a OpenVPN, pour android, il y a OpenVPN Connect et pour Mac nous recommandons Tunnelblick.</p>
+        <p></p>
+        <p class="title" id="Problème">Problèmes...</p>
+        <p>Au final, il y avait un problème lorsque l'on a essayé d'établir une connection entre notre appareil et la Raspberry Pi. Nous avons essayé de nous connecter sur le serveur VPN via des ordinateurs Windows et Mac, avec OpenVPN et TunnelBlick, ainsi que avec un téléphone android avec OpenVPN Connect. Dans tout ces cas de figures, il n'y avait pas de messages d'erreur, mais les logs affichaient qu'ils étaient en attentent.</p>
+        <p>Voici ce que TunnelBick affiche(le compteur allait jusqu'à 10 minutes puis la fenêtre se ferme):</p>
+        <img src="androidvpn.png" alt="vpn">
+        <p>Nous avons des idées des causes de ces
+
+
+      </div>
+    </div>
+
+
+
+  </body>
+
+  <footer>
+    <div class="footer"><p>&copy El & Ph works 2019<br>in coproduction with Alexandrappeurs<br> and Positive Vabration </p></div>
+  </footer>
+</html>
