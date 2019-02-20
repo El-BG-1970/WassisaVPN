@@ -23,74 +23,11 @@
     <div class="parallax">
     </div>
 
-    <div class="container">
-      <a><input class="sb" type="text" id="myInput" onkeyup="myFunction()" placeholder="Entrez un mot..." title="Type in a name"></a>
-  		<div class="feed">
-  			<ul id="myUL">
-  				<li><div class="row1"><a href="#CPU"><img class="image" src="CPU.png"></a><p>CPU</p></div></li>
-  				<li><div class="row1"><a href="#GPU"><img class="image" src="GPU.png"></a><p>GPU</p></div></li>
-  				<li><div class="row1"><a href="#MemCache"><img class="image" src="La Mémoire Cache.png"></a><p>La Mémoire Cache</p></div></li>
-  				<li><div class="row1"><a href="#RAM"><img class="image" src="La RAM.png"></a><p>La RAM</p></div></li>
-  				<li><div class="row1"><a href="#ROM"><img class="image" src="La ROM.png"></a><p>La ROM</p></div></li>
-  				<li><div class="row1"><a href="#MemDisque"><img class="image" src="La Mémoire du Disque.png"></a><p>La Mémoire du Disque</p></div></li>
-          <li><div class="row1"><a href="#CarteMère"><img class="image" src="La Carte Mère.png"></a><p>La Carte Mère</p></div></li>
-          <li><div class="row1"><a href="#Clock"><img class="image" src="La Clock.png"></a><p>La Clock</p></div></li>
-          <li><div class="row1"><a href="#Bus"><img class="image" src="Les Bus.png"></a><p>Les Bus</p></div></li>
-
-  			</ul>
-  		</div>
-    </div>
-    <div class="textcontainer">
-      <div class="text">
-        <p class="titlediv">- - - PROCESSEURS - - -</p>
-        <p class="title" id="CPU">Le CPU (Central Processing Unit)</p>
-        <p>Une des parties les plus importantes d'un ordinateur. Généralement défini par des unités de logique arithmétique(ALU) et/ou des unités de controle (CU). Doit être joint a une mémoire première pour former le complexe processeur-mémoire décrit dans l'architecture Von Neumann.</p>
-        <p class="Title">Le GPU (Graphic Processing Unit)</p>
-        <p>Un circuit électronique spécialisé généralement composé d'un ou plusieurs microprocesseurs dédiés à la génération de graphismes complexes. Le GPU permet notamment un gain de vitesse notoire en générant les graphismes en utilisant du hardware et non du software, allégant la tache du CPU. De plus la structure extrêmement parallèle des GPUs leur permet de faire des calculs sur des très grosses masses d'information plus vite que les CPU.</p>
-
-        <p class="titlediv">- - - MÉMOIRES - - -</p>
-        <p class="title" id="MemCache">La Mémoire Cache</p>
-        <p>Le type de mémoire le plus rapproché du processeur, au point qu'il y est souvent directement intégré. Il permet notamment les échanges d'information entre le processeur et la RAM. Il contient donc en général les addresses de la RAM, et permet donc d'y accéder plus rapidement et efficacement.</p>
-        <p class"title" id="RAM">La Mémoire Vive/RAM (Random Access Memory)</p>
-        <p>Mémoire volatile qui est utilisée pour accéder temporairement a des applications ou autres informations. Son nom est issu de son organisation. En effet, la RAM est arrangée sous la forme d'une matrice a deux dimensions ou chaque case est repérée par un nombre de colonne et un nombre de ligne. Cette organisation indépendante de chaque mémoire permet donc d'accédér a chaque mémoire en aussi peu de temps qu'il est nécéssaire pour accéder a quelconque autre mémoire, d'ou le nom "Random Access Memory".</p>
-        <p class="title" id="ROM">La ROM</p>
-        <p>Une mémoire non volatile dont le contenu ne peut généralement pas être modifié. Même si elle ne peut être modifiée, son organisation est identique a celle de la RAM, ce qui signifie que les mémoires de la ROM sont disponibles en accès aléatoire (random access).</p>
-        <p class="title" id="MemDisque">Le Disque</p>
-        <p>La mémoire disque est une mémoire qui permet d'archiver tous les objet dont le processeur n'a pas besoin pour effectuer son travail. Ces derniers incluent notamment les disques durs, et sont utilisés pour enregistrer toutes les informations de l'utilisateur.</p>
-
-        <p class="titlediv">- - - AUTRES - - -</p>
-        <p class="title" id="CarteMère">La Carte Mère</p>
-        <p>Un circuit imprimé dans lequel sont branchés les autres circuits et périphériques nécéssaires au bon fonctionnement de l'ordinateur. En général, la carte mère porte tous les éléments de la machine et peut être améliorée par l'ajout de cartes spécialisées supplémentaires qui permettent d'étendre ses capacités. Ces dèrnières y sont liées par des bus specifiques.</p>
-        <p class="title" id="Clock">L'Horloge (Clock)</p>
-        <p>Un occillateur électronique qui génère des pulsions a "heure" fixe. Cette "heure" est calculée très précisément et l'intégralité des calculs de l'ordinateur sont organisées autour de cette horloge.</p>
-        <p class="title" id="Bus">Les Bus</p>
-        <p>Le terme bus désigne un dispositif de transmission partagé entre plusieurs composants du systèmes. Les bus sont en général optimisés pour la quantité de bits dans les "mots" échangés entre les périphériques.</p>
-        <p class="title" id"OS">L'OS</p>
-        <p>l'ensemble des logiciels qui permettent de controler les resources système et les processus utilisant ces ressources; certains des systèmes d'exploitation les plus connus sont Windows, MacOS ou encore GNU/Linux.</p>
-      </div>
-    </div>
+    <h1>BIENVENUE</h1>
 
 
 
-    <script>
-    //============================================================
-    function myFunction() {
-        var input, filter, ul, li, a, i;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("myUL");
-        li = ul.getElementsByTagName("li");
-        for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("a")[0];
-            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                li[i].style.display = "";
-            } else {
-                li[i].style.display = "none";
-            }
-        }
-    }
-    //============================================================
-	</script>
+
   </body>
 
   <footer>

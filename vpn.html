@@ -1,90 +1,127 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="stylex.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <title>El & Ph Info Tech</title>
+    <link rel="icon" href="logo.png" type="image" sizes="16x16">
   </head>
 
   <body>
     <header>
-      <ul class="headder">
-		<a><img class="LSD" src="logo.png" alt="鼻子大"></a>
-		<a class="logo" href="index.html">WAS IS A VPN</a>
-      </ul>
+      <div class="headder">
+        <ul>
+  	       <a href="index.html"><img class="LSD" src="logo.png" alt="hope"></a>
+  	       <a class="logo" href="index.html">Info Tech</a>
+           <a><input class="sT"></a>
+           <a class="menu" href="vpn.html">VPN</a>
+           <a class="menu" href="ordinateur.html">Ordinateur</a>
+           <a class="menu" href="index.html">Home</a>
+        </ul>
+      </div>
     </header>
 
-    <div class="container">
-      <!--  Qu'est ce qu'un serveur? 1
-	    Quels sont les services d'un serveur? 1
-	    Qu'est ce qu'un protocole? 2
-	    Qu'est ce qu'une adresse IP? 3
-	    Qu'est ce qu'un port? 4
-	    Qu'est ce qu'un réseau? 5
-	    Qu'est ce qu'un masque de réseau? 5
-	    qu'est ce qu'un sous réseau? 5
-	    Qu'est ce qu'un serveur PROXY? 6
-	    Qu'est ce qu'un VPN et quel est son intérêt? 7 
-	-->
+    <div class="parallax">
+    </div>
 
-      <!-- une div par question pour mettre une image... -->
-      <div class="textcontainer">
-		<p class="title" id="serveur">QU'EST-CE QU'UN SERVEUR?</p>
-		<p>Un serveur informatique est un dispositif informatique (matériel ou logiciel) qui offre des services a un ou plusieurs clients. Il fonctionne en permanence, et répond automatiquement aux requêtes provenant des clients avec lesquels il est connecté.</p>
-		<p>Les services les plus courants proposés par un serveur sont:</p>
-		<ol>
-			<li>L'accès au informations du World Wide Web</li>
-			<li>L'envoi et la consultaiton de couriels</li>
-			<li>Le partage d'imprimante (sur un réseau local, notamment)</li>
-			<li>Le stockage d'informations en bases de données</li>
-			<li>la gestion de l'authentification et du controle d'accès</li>
-			<li>Le jeu et la mise à disposition de logiciels applicatifs</li>
-		</ol>
-		<!-- (1. la on explique ce que c'est un serveur walla, & les services...) -->
-		<!-- image d'un serveur de bar -->
-		<a class="illustration"><img class="img" src="la tu cales la source"></a>
-      </div>
+    <div class="textcontainer">
+      <div class="text">
+        <p class="title" id="Serv">Qu'est-ce qu'un serveur internet?</p>
+          <p>Un <b>serveur</b> informatique est un dispositif informatique (matériel ou logiciel) qui offre des services a un ou plusieurs clients. Il fonctionne en permanence, et répond automatiquement aux requêtes provenant des clients avec lesquels il est connecté.</p>
+          <p>Les services les plus courants proposés par un serveur sont:</p>
+          <ol>
+            <li>L'accès au informations du World Wide Web</li>
+            <li>L'envoi et la consultaiton de couriels</li>
+            <li>Le partage d'imprimante (sur un réseau local, notamment)</li>
+            <li>Le stockage d'informations en bases de données</li>
+            <li>la gestion de l'authentification et du controle d'accès</li>
+            <li>Le jeu et la mise à disposition de logiciels applicatifs</li>
+          </ol>
+          <a class="illustration"><img class="img" src="images_vpn/server.png"></a>
 
-      <div class="textcontainer">
-		<p class="title" id="protocol">PROTOCOLES INTERNET / WEB?</p>
-		<p>(2. la on liste / explique les protocoles)</p>
-		<!-- handshake image... -->
-		<a class="illustration"><img class="img" src="la tu cales la source"></a>
-      </div>
+        <p class="titlediv">- - - - - -</p>
 
-      <div class="textcontainer">
-		<p class="title" id="IP">QU'EST-CE QU'UNE IP?</p>
-		<p>(3. la on explique ce que c'est une ip)</p>
-		<!-- image d'une addresse -->
-		<a class="illustration"><img class="img" src="la tu cales la source"></a>
-      </div>
+        <a class="title" id="IP">&spades; Que sont les Protocoles Internet? &spades;</a>
+          <p>La suite <i>TCP/IP</i> est le protocole standard utilisé par tous les systèmes qui se connectent à l'internet.</p>
+          <p>Le protocole <b>IP</b> est un protocole de plus bas niveau que le protocole TCP. Il propose un service de datagramme, sans connection, et une structure d'addresse pour le partage d'information. Le protocole IP permet de fragmenter de longs datagrammes en paquets numérotés, qui sont ensuite transmis et réassemblés chez le destinataire.</p>
+          <p>Le protocole <b>TCP</b> est un protocole de transfert de données qui permet le transfert d'informations de taille arbitraire, nommés segments. Le protocole assure que la réception des données se fera dans le même ordre que les données ont été envoyées. Ceci est permis par un échange constant d'informations entre le client et le server, ce dernier demandant une confirmation de réception après l'envoi de quelquonque portion du segment.</p>
+          <img class="resize" src="images_vpn/protocol.png">
+          <p class="titlediv">&#1421; &#1421; &#1421; &#1421; &#1421; &#1421;</p>
 
-      <div class="textcontainer">
-		<p class="title" id="port">QUE SONT LES PORTS?</p>
-		<p>(4. la on explique ce que c'est un port)</p>
-		<!-- image d'un deck -->
-		<a class="illustration"><img class="img" src="la tu cales la source"></a>
-      </div>
+        <p class="title" id="IPaddr">&spades; Qu'est-ce qu'une addresse IP? &spades;</p>
+          <p>Une <b>addresse IP</b> est un numéro d'indentification qui est attribué de facon permanente, ou dynamque (via DHCP) à chaque périphérique relié à un réseau informatique qui utilise les protocoles de la famille <a href="#IP"></ahref><b>TCP/IP</b></a>. Ces addresses varient en longueur, les plus communes mesurant 32 bits (IPv4) ou 128 bits (IPv6).</p>
+          <img class="resize" src="images_vpn/ip.jpg">
+          <p class="titlediv">&#1758; &#1758; &#1758; &#1758; &#1758; &#1758;</p>
 
-      <div class="textcontainer">
-		<p class="title" id="reseau">QU'EST-CE QU'UN RESEAU?</p>
-		<p>(5. la on explique ce que c'est un reseau et comment )</p>
-		<!-- image d'un reseau type toile d'araignée -->
-		<a class="illustration"><img class="img" src="la tu cales la source"></a>
-      </div>
+        <p class="title" id="port">&spades; Qu'est-ce qu'un port? &spades;</p>
+          <p>Un <b>port</b> est un point a partir duquel des données peuvent entrer ou sortir d'un réseau. Les ports de communication permettent notamment de se connecter a une interface de communication et d'échanger des informations avec d'autres ordinateurs ou systèmes électroniques. Ce terme est applicable aux interfaces réseau et aux interfaces DTE (<i>Data Terminal Equipment</i>), tel un ordinateur connecté a internet, une imprimante réseau, un terminal, etc.).</p>
+          <img class="resize" src="images_vpn/port.jpg">
+            <p class="titlediv">&#4051; &#4051; &#4051; &#4051; &#4051; &#4051;</p>
 
-      <div class="textcontainer">
-		<p class="title" id="proxy">QU'EST-CE QU'UN RESEAU PROXY?</p>
-		<p>(la on explique ce que c'est un proxy)</p>
-		<!-- image d'un mec en scred type anonymous -->
-		<a class="illustration"><img class="img" src="la tu cales la source"></a>
-      </div>
+        <p class="title" id="net">&spades; Qu'est-ce qu'un réseau? &spades;</p>
+          <p>Un <b>réseau</b> est un dispositif qui est composé de nombreux terminaux, noeuds, et méthodes de connection qui peuvent inclure des lignes physiques mais aussi des satellites, des micro-ondes, des ondes radios, etc. En général, un réseau est une collection de ressources et est utilisé pour établir et gérer les voies de communication entre les terminaux qui composent ledit réseau.</p>
+          <p>Un <b>masque de sous-réseau</b> est une spécification de la partie d'une addresse IP qui représente l'identitée du réseau. Il s'agit d'un bitmap de 32 bits dans lequel chaque position ou le bit vaut 1 fait partie de l'identité du réseau. Ainsi, dans une addresse ipv4, le masque 255.255.255.0 montre que les trois premiers nombres appartiennent au masque et que le quatrième est variable, et change selon l'adresse de l'hote.</p>
+          <p>Un <b>sous-réseau</b> est une partie identifiable d'un réseau. La division d'un réseau en sous-réseau permet de créer des réseaux adaptés au besoins d'une entreprise en fonction des taches que doit remplir le réseau et de la division du travail au sein de l'entreprise.</p>
+          <img class="resize" src="images_vpn/reseau.png">
+          <p class="titlediv">&#5782; &#5782; &#5782; &#5782; &#5782; &#5782;</p>
 
-      <div class="textcontainer">
-		<p class="title" id="vpn">QU'EST-CE QU'UN RESEAU VPN?</p>
-		<p>(la on explique ce que c'est un vpn)</p>
-		<!-- image d'un deck -->
-		<a class="illustration"><img class="img" src="la tu cales la source"></a>
+        <p class="title" id="proxy">&spades; Qu'est-ce qu'un serveur proxy? &spades;</p>
+          <p>Un <b>serveur proxy</b> est un appareil qui gère le traffic internet pour un autre appareil. Un client envoie une requête à un proxy, qui la relaie à un serveur, qui, lui, voit le proxy comme un client. La réponse du serveur est ensuite renvoyée au proxy, et, de ce dernier, au client. Les proxys sont généralement utilisés conjointement a un firewall, pour permettre l'utilisation de protocoles complexes, pour examiner les requêtes et les réponses internet, pour acheminer les requêtes via un autre serveur, ou filter les réponses aux requêtes émises.</p>
+          <img class="resize" src="images_vpn/proxy.png">
+          <p class="titlediv">&#5860; &#5860; &#5860; &#5860; &#5860; &#5860;</p>
+
+        <p class="title" id="VPN">&spades; Qu'est-ce qu'un VPN? &spades;</p>
+          <p>Un <b>VPN</b> est une connection entre deux ordinateurs ou autres appareils au sein de laquelle toute information envoyée sur un réseau partagé, tel que l'internet, et chiffrée et déchiffrée, par les l'émetteur et le récepteur, respectivement. Alors que les informations sont partagées sur un réseau ouvert, ces dernières sont protégées, grace au VPN, pendant le cheminement de l'emmeteur et le destinataire.</p>
+          <p>Les VPN permettent de protéger des informations confidentielles sur un réseau ouvert, accéder a un intranet depuis un point extérieur, ou tromper un serveur quant à sa localisation, par exemple.</p>
+          <a class="illustration"><img class="resize" src="images_vpn/vpn.jpg"></a>
+          <p class="titlediv">&#9957; &#9957; &#9957; &#9957; &#9957; &#9957;</p>
+
+        <p class="titlediv">- - - VPN SUR RARSPBERRY PI - - -</p>
+        <p class="title" id="Introduction">&spades; Introduction &spades;</p>
+        <p>Afin d'installer un VPN sur notre Raspberry Pi, nous avons choisit d'utiliser le logiciel PiVPN. Il nous permet de configurer et installer sur la Raspberry Pi un serveur OpenVPN</p>
+        <p class="title" id="OpenVPN?">&spades; Qu'est ce que OpenVPN? &spades;</p>
+        <p>OpenVPN est un logiciel (open-source en plus) utilisant des méthodes de VPN pour créer une connection point à point, ou entre deux sites sécurisée.</p>
+        <p class="title" id="TelechargerPiVPN">&spades; Télécharger PiVPN &spades;</p>
+        <p>Notre raspberry pi était sous le système d’exploitation Raspbian OS qui avait une interface graphique intégrée. Pour une installation plus rapide nous recommandons la version lite, où tout se fait en headless (c’est-à-dire seulement en utilisant le terminal de la raspberry pi).</p>
+        <p>En premier, nous avons installé PiVPN en utilisant la commande suivante:</p>
+        <p>curl -L https://install.pivpn.io l bash</p>
+        <p><i>Curl est une commande permettant de transférer de l’information vers un serveur ou d’en recevoir. Ici, nous recevons l’information stocké à install.pivpn.io, qui est le logiciel en question que nous voulons. Il est important de comprendre que cette commande peut être dangereuse lorsqu’on ne connait pas la source que l’on cible avec curl.</i></p>
+        <p class="title" id"ConfigPiVPN">&spades; Configuration du VPN &spades;</p>
+        <p>PiVPN configure la Raspberry Pi de sorte que nous avons une adresse IP statique. Comme ça si jamais nous redémarrons la Raspberry Pi, celle ci ne changera pas d’adresse IP.</p>
+        <p>Nous avons activé les mises à jour de sécurité. Cela est très important puisque nous allons ouvrir un port sur notre routeur pour rediriger la Raspberry Pi vers internet et ainsi créer de potentielles vulnérabilités.
+        <p></p>
+        <p>Nous avons ensuite changé le port par défaut proposé par PiVPN. Cela ajoute également une couche de sécurité puisque certaines attaques se font en scannant les ports par défaut.</p>
+        <p>À présent, il est temps de créer la clé d’encryption. Nous avions le choix entre créer une clé RSA de 1024, 2048 ou 4096 bits d’encryption. Plus la clé aura nombre de bits d’encryptions élevée, plus elle prendra du temps à être générée et sera par conséquent plus sécurisée. Comme nous utilisions une Raspberry Pi 3 B+, nous aurions pu choisir une encryption à 4096 bits, mais nous avons opté pour 2048 à la fin, qui a prit environ 3 minutes à générer.</p>
+        <p>Nous devions maintenant choisir entre une adresse IP publique ou un DNS pour notre configuration DNS</p>
+        <p>Définition du DNS (Domain Name System): <i>protocole d’association entre l’URL d’un site (exemple: www.google.com) en adresse IP, que l’ordinateur sait reconnaître pour communiquer avec le serveur hébergeant ce site.</i></p>
+        <p>Note: si le but d'un VPN est d’avoir une confidentialité dans les informations privées, il est important d’être conscient du fait que certains fournisseurs DNS enregistrent leurs informations et créent des set de données sur les individus.</p>
+        <p>C'est la fin de la configuration du VPN, nous redémarrons notre Raspberry Pi à présent, question de principe…</p>
+        <p class="title" id="OpenVPN">&spades; Créer le fichier client OpenVPN &spades;</p>
+        <p>Nous devons maintenant créer un fichier client OpenVPN, nous avons fait cela avec la commande:</p>
+        <p>pivpn add</p>
+        <p>Nous choisissons android.ovpn comme nom, nous devons également choisir un mot de passe, nous recommandons un mot de passe long et compliqué.</p>
+        <img class="resize" src="scrn.png" alt="vpn">
+        <p>Une fois que la clé est crée, il ne reste plus que la transférer sur l’appareil sur lequel on souhaite avoir le VPN.</p>
+        <p class="title" id="Transferer">&spades; Transférer le fichier &spades;</p>
+        <p>Pour le transférer, nous avons une technique assez efficace: Il suffit de faire passer la Raspberry Pi en Serveur HTTP Simple temporaire avec la commande (toujours dans le terminal):</p>
+        <p>python -m SimpleHTTPServer 8080         (Cela ne marche que avec python installé bien entendu)</p>
+        <p>En se connectant avec un appareil à l’adresse IP de la Raspberri Pi, sur le port 8080, nous pouvons directement télécharger le fichier android.ovpn!</p>
+        <p class="title" id="Conclusion">&spades; Conclusion &spades;</p>
+        <p>Une fois le fichier client Open VPN sur l’appareil, il suffit de l’utiliser avec un client Open VPN, il en existe beaucoup. Pour Windows, il y a OpenVPN, pour android, il y a OpenVPN Connect et pour Mac nous recommandons Tunnelblick.</p>
+        <p></p>
+        <p class="title" id="Problème">&spades; Problèmes... &spades;</p>
+        <p>Au final, il y avait un problème lorsque l'on a essayé d'établir une connection entre notre appareil et la Raspberry Pi. Nous avons essayé de nous connecter sur le serveur VPN via des ordinateurs Windows et Mac, avec OpenVPN et TunnelBlick, ainsi que avec un téléphone android avec OpenVPN Connect. Dans tout ces cas de figures, il n'y avait pas de messages d'erreur, mais les logs affichaient qu'ils étaient en attentent.</p>
+        <p>Voici ce que TunnelBick affiche(le compteur allait jusqu'à 10 minutes puis la fenêtre se ferme):</p>
+        <img class="resize" src="androidvpn.png" alt="vpn">
+        <p>Cette erreur pourrait avoir plusieurs sources, que nous avons pour la plupart testées.
+        <p>Première source d'erreur: Nous travaillons sur le réseau de notre école, qui pourrait avoir certaines restrictions pour ce genre de logiciels. Nous avons donc essayés de faire un partage de connexion à notre Raspberry Pi grâce à un téléphone, qui lui ne pouvait avoir de restriction puisque le partage n'a pas été configuré au préalable (en particulier sur les iPhones). Cependant, cela ne changea rien au message d'erreur que nous recevions.</p>
       </div>
     </div>
+
+
+
   </body>
-  
+
+  <footer>
+    <div class="footer"><p>&copy El & Ph works 2019<br>in coproduction with Alexandrappeurs<br> and Positive Vabration </p></div>
+  </footer>
+</html>
